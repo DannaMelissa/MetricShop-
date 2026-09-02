@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Marca - violeta/índigo */
+  --color-brand: #6d4ce4;
+  --color-brand-light: #8566ed;
+  --color-brand-pastel: #efebfe;
+  /* Texto */
+  --color-ink: #161a31;
+  --color-ink-soft: #7f8394;
+  /* Fondo y superficies */
+  --color-background: #f3f4f6;
+  --color-surface: #ffffff;
+  /* Acentos semánticos */
+  --color-success: #20b762;
+  --color-success-bg: #e4f4ec;
+  --color-danger: #fc6494;
+  --color-warning: #fcb85c;
+  --color-warning-bg: #fef3e7;
+  --color-turquoise: #68c4c4;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
