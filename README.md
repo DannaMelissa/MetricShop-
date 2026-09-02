@@ -6,12 +6,12 @@ Dashboard analítico de ventas para una tienda, construido con **Next.js**, **Pr
 
 ## Características
 
-- **Panel de métricas** desde PostgreSQL: ventas totales, pedidos y unidades vendidas.
-- **Gráfica de ventas diarias** con línea suavizada y relleno degradado (Chart.js).
-- **Distribución por categoría** con gráfica de dona y leyenda ordenada.
-- **Productos más vendidos** en tabla con ingresos y cantidades.
-- **Interfaz limpia** con paleta violeta personalizada, sidebar con iconos Lucide (thin-stroke) y diseño responsive.
-- **API REST** propia (`/api/metricas`, `/api/productos`, `/api/ventas`).
+- **Indicadores clave (KPIs)**: ventas totales, número de pedidos y unidades vendidas, calculados directamente de la base de datos.
+- **Tendencia de ingresos**: gráfica de ventas diarias con línea suavizada y relleno degradado.
+- **Desglose por categoría**: gráfica de dona que muestra qué categorías aportan más ingresos.
+- **Ranking de productos**: listado de los productos más vendidos con cantidades e ingresos.
+- **Interfaz responsive**: sidebar colapsable, iconografía Lucide y paleta personalizada.
+- **API REST**: endpoints propios para consumir métricas, productos y ventas.
 
 ---
 
@@ -103,15 +103,3 @@ metricshop/
 | GET    | `/api/metricas`  | KPIs, ventas por día, por categoría y top productos |
 | GET    | `/api/productos` | Lista todos los productos                     |
 | GET    | `/api/ventas`    | Lista de ventas, con filtros `?desde=&hasta=` |
-
----
-
-## Paleta de marca
-
-| Uso        | Color        |
-| ---------- | ------------ |
-| Primario   | `#6d4ce4`    |
-| Primario claro | `#8566ed`  |
-| Fondo pastel | `#efebfe`   |
-| Texto      | `#161a31`    |
-| Texto suave | `#7f8394`    |
