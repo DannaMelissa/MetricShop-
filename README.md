@@ -1,14 +1,12 @@
-# 🛍️ MetricShop
+# MetricShop
 
 Dashboard analítico de ventas para una tienda, construido con **Next.js**, **Prisma** y **PostgreSQL**. Muestra métricas clave (ingresos, pedidos, unidades vendidas) con gráficas interactivas y una tabla de productos más vendidos.
 
-Este proyecto es parte de mi portafolio personal y representa mi práctica de **desarrollo web full-stack**: base de datos real, API REST y una interfaz moderna.
-
 ---
 
-## ✨ Características
+## Características
 
-- **Panel de métricas** en tiempo real desde PostgreSQL: ventas totales, pedidos y unidades vendidas.
+- **Panel de métricas** desde PostgreSQL: ventas totales, pedidos y unidades vendidas.
 - **Gráfica de ventas diarias** con línea suavizada y relleno degradado (Chart.js).
 - **Distribución por categoría** con gráfica de dona y leyenda ordenada.
 - **Productos más vendidos** en tabla con ingresos y cantidades.
@@ -17,19 +15,19 @@ Este proyecto es parte de mi portafolio personal y representa mi práctica de **
 
 ---
 
-## 🧰 Stack
+## Stack
 
 | Capa         | Tecnología                                            |
 | ------------ | ----------------------------------------------------- |
 | Frontend     | Next.js 16, React 19, Tailwind CSS 4, lucide-react    |
 | Gráficas     | Chart.js + react-chartjs-2                            |
 | Backend      | API routes de Next.js (App Router)                    |
-| Base de datos | PostgreSQL 16, Prisma 6, driver `pg`                  |
-| Deploy       | GitHub (repo público de portafolio)                   |
+| Base de datos | PostgreSQL 16, Prisma 6, driver `pg`                 |
+| Deploy       | Vercel · Neon (PostgreSQL)                            |
 
 ---
 
-## 🚀 Cómo correrlo localmente
+## Cómo correrlo localmente
 
 ### 1. Requisitos
 
@@ -63,8 +61,6 @@ npx prisma migrate dev --name init
 node prisma/seed.mjs
 ```
 
-> El seed inserta 15 productos y 800 ventas de ejemplo para que el dashboard muestre datos.
-
 ### 6. Iniciar el servidor
 
 ```bash
@@ -73,9 +69,11 @@ npm run dev
 
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
+> El seed inserta 15 productos y 800 ventas de ejemplo para que el dashboard muestre datos.
+
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 metricshop/
@@ -98,7 +96,7 @@ metricshop/
 
 ---
 
-## 🔌 Endpoints de la API
+## Endpoints de la API
 
 | Método | Ruta             | Descripción                                  |
 | ------ | ---------------- | --------------------------------------------- |
@@ -108,7 +106,7 @@ metricshop/
 
 ---
 
-## 🎨 Paleta de marca
+## Paleta de marca
 
 | Uso        | Color        |
 | ---------- | ------------ |
@@ -117,17 +115,3 @@ metricshop/
 | Fondo pastel | `#efebfe`   |
 | Texto      | `#161a31`    |
 | Texto suave | `#7f8394`    |
-
----
-
-## 📚 Lo que aprendí
-
-- Crear un **dashboard full-stack** conectado a una base de datos real.
-- Diseñar **API REST** con App Router de Next.js.
-- Modelar datos con **Prisma** y aplicar *migrations*.
-- Construir una interfaz **responsive y consistente** con Tailwind.
-- Componentes de **gráficas** con Chart.js y gradientes.
-
----
-
-Desarrollado con 💜 como proyecto de aprendizaje personal.
